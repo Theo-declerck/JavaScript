@@ -1,0 +1,44 @@
+.vertical-menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;     
+    top: 0;
+    left: -250px;
+    background-color: #242222;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+
+  /* / vertical-menu menu links / */
+  .vertical-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c9c3c3;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .vertical-menu a:hover {
+    color: #111;
+  }
+
+  .vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* / Active class / */
+  .vertical-menu.active {
+    left: 0;
+  }
+
+  /* / Close btn */
+  .vertical-menu .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
